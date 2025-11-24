@@ -1,0 +1,63 @@
+{% extends 'web_app/base/base.html' %}
+{% load static %}
+
+{% block content %}
+    <div class="container shadow mt-5 border-top pb-4">
+        <div class="display-5 border-bottom py-4 text-center">{{ propiedad.nombre }}</div>
+        <div class="row">
+            <div class="col-6 mx-auto p-4 text-center">
+                <!-- Carousel -->
+                <div id="carouselFlans" class="carousel slide">
+                    <div class="carousel-indicators">
+                        {% for imagen in imagenes %}
+                        <button type="button" data-bs-target="#carouselFlans" data-bs-slide-to="{{ forloop.counter0 }}" class="{% if forloop.first %}active{% endif %}" aria-current="{% if forloop.first %}true{% endif %}"></button>
+                        {% endfor %}
+                    </div>
+
+                    <div class="carousel-inner">
+                        {% for imagen in imagenes %}
+                        <div class="carousel-item {% if forloop.first %}active{% endif %}">    
+                            <img src="{{ imagen.foto.url }}" class="d-block w-100" alt="...">
+                        </div>
+                        {% endfor %}
+                    </div>
+                    
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselFlans" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselFlans" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+                <!-- Fin Carousel -->
+            </div>    
+            <div class="col-6 text-end">
+                <div class="display-6 border-bottom pt-4">Dirección</div>
+                <div class="">{{ propiedad.direccion }}</div>
+                <div class="display-6 border-bottom pt-4">Detalles</div>
+                <div>{{ propiedad.tipo_propiedad|capfirst }}</div>
+                <div>{{ propiedad.m2_construidos }} m2 Construidos</div>
+                <div>{{ propiedad.m2_totales }} m2 Totales</div>
+                
+                <div class="fs-4">
+                    {{ propiedad.habitaciones }} <i class="fa-solid fa-person-shelter"></i>
+                    {{ propiedad.banos }} <i class="fa-solid fa-toilet"></i>
+                    {{ propiedad.estacionamientos }} <i class="fa-solid fa-car"></i>
+                </div>    
+
+                
+                <div class="display-6 border-bottom pt-4">Descripción</div>
+                <div>{{ propiedad.descripcion }}</div>
+                <div class="display-6 border-bottom pt-4">Arriendo</div>
+                <div class="h2 fw-bold">$ {{ propiedad.precio_arriendo }} mensual </div>
+                <div class="fs-5">Meses Garantia:{{ propiedad.meses_garantia }}</div>
+            </div>
+        </div>        
+        <div class="row pt-4">
+            <br>
+            <a class = "btn btn-secondary fw-bold w-25 mx-auto" href="{% url 'leases'%}">Volver</a><br>     
+        </div>
+    </div>   
+{% endblock %}

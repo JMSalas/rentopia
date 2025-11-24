@@ -1,0 +1,41 @@
+{% extends 'web_app/base/base.html' %}
+
+{% block content %}
+    <div class="container py-5">
+        <div class="row">
+            <div class="col-10 mx-auto shadow text-center border-top">
+                <div class="h1 border-bottom py-5 text-center">Imagenes de la Propiedad:</div>
+                {% if imagenes %}
+                    {% for imagen in imagenes %}
+                        <div class="row border-bottom fs-6 py-2">
+                            <div class="col text-start">
+                                {{ imagen }}
+                            </div>
+                            <div class="col d-flex justify-content-end">
+                                <div>
+                                    <a class='btn btn-warning me-3' href="{{ imagen.foto.url }}"><i class="fa-solid fa-eye"></i> Ver</a>
+                                </div>
+                                <div>
+                                    <form method="post">
+                                        {% csrf_token %}
+                                        <button type="submit" name="delete_photo" value="{{ imagen.id }}" class='btn btn-danger me-3'><i class="fa-solid fa-trash-can"></i> Delete</button>
+                                    </form>
+                                </div> 
+                            </div>
+                        </div>
+                    {% endfor %}
+                {% else %}
+                    <div class="fs-5"> Aun no se ha agregado ninguna imagen. </div>
+                {% endif%}
+                <div class="py-5">
+                    <form method="post" enctype="multipart/form-data">
+                        {% csrf_token %}
+                        {{ form.foto }}
+                        <button type="submit" class='btn btn-dark' name="add_photo"><i class="fa-solid fa-plus"></i> Agregar Imagen</button>
+                    </form>
+                    <a class = "btn btn-secondary" href="{% url 'properties' %}">Volver</a><br>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

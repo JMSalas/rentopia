@@ -1,0 +1,200 @@
+[
+    {
+        "model": "rentopiaApp.propiedad",
+        "pk": 1,
+        "fields": {
+            "nombre": "Propiedad 1",
+            "descripcion": "Descripción de la propiedad 1",
+            "m2_construidos": 15.0,
+            "m2_totales": 20.0,
+            "estacionamientos": 2,
+            "habitaciones": 3,
+            "banos": 2,
+            "precio_arriendo": 300000,
+            "meses_garantia": 2,
+            "disponible": true,
+            "fecha_publicacion": "2024-07-22",
+            "fecha_modificacion": "2024-07-22",
+            "google_map": "https://maps.google.com/?q=Propiedad+1",
+            "tipo_propiedad": 2,
+            "arrendador": 1,
+            "direccion": 11
+        }
+    },
+    {
+        "model": "rentopiaApp.propiedad",
+        "pk": 2,
+        "fields": {
+            "nombre": "Propiedad 2",
+            "descripcion": "Descripción de la propiedad 2",
+            "m2_construidos": 18.0,
+            "m2_totales": 22.0,
+            "estacionamientos": 1,
+            "habitaciones": 4,
+            "banos": 3,
+            "precio_arriendo": 350000,
+            "meses_garantia": 1,
+            "disponible": true,
+            "fecha_publicacion": "2024-07-22",
+            "fecha_modificacion": "2024-07-22",
+            "google_map": "https://maps.google.com/?q=Propiedad+2",
+            "tipo_propiedad": 1,
+            "arrendador": 1,
+            "direccion": 14
+        }
+    },
+    {
+        "model": "rentopiaApp.propiedad",
+        "pk": 3,
+        "fields": {
+            "nombre": "Propiedad 3",
+            "descripcion": "Descripción de la propiedad 3",
+            "m2_construidos": 20.0,
+            "m2_totales": 25.0,
+            "estacionamientos": 2,
+            "habitaciones": 3,
+            "banos": 2,
+            "precio_arriendo": 400000,
+            "meses_garantia": 1,
+            "disponible": true,
+            "fecha_publicacion": "2024-07-22",
+            "fecha_modificacion": "2024-07-22",
+            "google_map": "https://maps.google.com/?q=Propiedad+3",
+            "tipo_propiedad": 1,
+            "arrendador": 1,
+            "direccion": 17
+        }
+    },
+    {
+        "model": "rentopiaApp.propiedad",
+        "pk": 4,
+        "fields": {
+            "nombre": "Propiedad 4",
+            "descripcion": "Descripción de la propiedad 4",
+            "m2_construidos": 16.0,
+            "m2_totales": 20.0,
+            "estacionamientos": 1,
+            "habitaciones": 2,
+            "banos": 1,
+            "precio_arriendo": 300000,
+            "meses_garantia": 2,
+            "disponible": true,
+            "fecha_publicacion": "2024-07-22",
+            "fecha_modificacion": "2024-07-22",
+            "google_map": "https://maps.google.com/?q=Propiedad+4",
+            "tipo_propiedad": 1,
+            "arrendador": 5,
+            "direccion": 12
+        }
+    },
+    {
+        "model": "rentopiaApp.propiedad",
+        "pk": 5,
+        "fields": {
+            "nombre": "Propiedad 5",
+            "descripcion": "Descripción de la propiedad 5",
+            "m2_construidos": 14.0,
+            "m2_totales": 18.0,
+            "estacionamientos": 1,
+            "habitaciones": 3,
+            "banos": 2,
+            "precio_arriendo": 250000,
+            "meses_garantia": 1,
+            "disponible": true,
+            "fecha_publicacion": "2024-07-22",
+            "fecha_modificacion": "2024-07-22",
+            "google_map": "https://maps.google.com/?q=Propiedad+5",
+            "tipo_propiedad": 2,
+            "arrendador": 8,
+            "direccion": 18
+        }
+    },
+    {
+        "model": "rentopiaApp.propiedad",
+        "pk": 6,
+        "fields": {
+            "nombre": "Propiedad 6",
+            "descripcion": "Descripción de la propiedad 6",
+            "m2_construidos": 16.0,
+            "m2_totales": 20.0,
+            "estacionamientos": 1,
+            "habitaciones": 2,
+            "banos": 1,
+            "precio_arriendo": 350000,
+            "meses_garantia": 2,
+            "disponible": true,
+            "fecha_publicacion": "2024-07-22",
+            "fecha_modificacion": "2024-07-22",
+            "google_map": "https://maps.google.com/?q=Propiedad+6",
+            "tipo_propiedad": 2,
+            "arrendador": 8,
+            "direccion": 15
+        }
+    },
+    {
+        "model": "rentopiaApp.propiedad",
+        "pk": 7,
+        "fields": {
+            "nombre": "Propiedad 7",
+            "descripcion": "Descripción de la propiedad 7",
+            "m2_construidos": 14.0,
+            "m2_totales": 18.0,
+            "estacionamientos": 1,
+            "habitaciones": 3,
+            "banos": 2,
+            "precio_arriendo": 250000,
+            "meses_garantia": 1,
+            "disponible": true,
+            "fecha_publicacion": "2024-07-22",
+            "fecha_modificacion": "2024-07-22",
+            "google_map": "https://maps.google.com/?q=Propiedad+7",
+            "tipo_propiedad": 2,
+            "arrendador": 3,
+            "direccion": 13
+        }
+    },
+    {
+        "model": "rentopiaApp.propiedad",
+        "pk": 8,
+        "fields": {
+            "nombre": "Propiedad 8",
+            "descripcion": "Descripción de la propiedad 8",
+            "m2_construidos": 14.0,
+            "m2_totales": 18.0,
+            "estacionamientos": 1,
+            "habitaciones": 3,
+            "banos": 2,
+            "precio_arriendo": 250000,
+            "meses_garantia": 1,
+            "disponible": true,
+            "fecha_publicacion": "2024-07-22",
+            "fecha_modificacion": "2024-07-22",
+            "google_map": "https://maps.google.com/?q=Propiedad+7",
+            "tipo_propiedad": 2,
+            "arrendador": 3,
+            "direccion": 16
+        }
+    },
+    {
+        "model": "rentopiaApp.propiedad",
+        "pk": 9,
+        "fields": {
+            "nombre": "Propiedad 9",
+            "descripcion": "Descripción de la propiedad 9",
+            "m2_construidos": 14.0,
+            "m2_totales": 18.0,
+            "estacionamientos": 1,
+            "habitaciones": 3,
+            "banos": 2,
+            "precio_arriendo": 250000,
+            "meses_garantia": 2,
+            "disponible": true,
+            "fecha_publicacion": "2024-07-22",
+            "fecha_modificacion": "2024-07-22",
+            "google_map": "https://maps.google.com/?q=Propiedad+7",
+            "tipo_propiedad": 2,
+            "arrendador": 3,
+            "direccion": 19
+        }
+    }
+]

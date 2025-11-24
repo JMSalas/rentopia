@@ -1,0 +1,21 @@
+{% extends 'web_app/base/base.html' %}
+
+{% block title %}
+    Rentopia Log out
+{% endblock %}
+
+{% block content %}
+<div class="container px-3">
+    <div class="shadow mx-auto text-center pb-5 my-5">
+        <div class="h1 bg-warning py-4">
+            Log Out Exitoso
+        </div>
+        <div class="fs-2 pt-5 pb-4">
+            Gracias por visitar Rentopia, vuelve pronto
+        </div>
+        <div class="pt-4 pb-2">
+            <a class="btn btn-warning fw-bold" href="{% url 'index' %}">Volver al Inicio</a>
+        </div>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,49 @@
+{% extends 'web_app/base/base.html' %}
+
+{% block content %}
+    <div class="container">
+        <div class="row py-5">
+            <div class="col-8 mx-auto shadow-lg">
+                <div class="text-center border-bottom h1 py-5">{{ user.first_name }} {{ user.last_name }}</div>
+                
+                <!-- Mensajes Creacion Exitosa User-Profile -->
+                {% if messages %}
+                <div class="alert alert-success">
+                    <ul class="messages">
+                        {% for message in messages %}
+                            <li{% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
+                        {% endfor %}
+                    </ul>
+                </div>   
+                {% endif %}
+                
+                <div class="border-bottom text-center">
+                    <div class="h4 border-bottom pt-4">Nombre Usuario</div>
+                    <div class="pb-1">{{ user.username }}</div> 
+                    <div class="h4 border-bottom pt-4">RUT</div>
+                    <div class="pb-1">{{ user.profile.rut }}</div> 
+                    <div class="h4 border-bottom pt-4">Correo Electrónico</div>
+                    <div class="pb-1">{{ user.email }}</div>
+                    <div class="h4 border-bottom pt-4">Teléfono</div>
+                    <div class="pb-1">{{ user.profile.telefono }}</div>
+                    <div class="h4 border-bottom pt-4">Dirección</div>
+                    <div class="pb-1">{{ user.profile.direccion }}</div>
+                    <div class="h4 border-bottom pt-4">Tipo Usuario</div>
+                    <div class="pb-1">{{ user.profile.tipo }}</div>
+                    <div class="h4 border-bottom pt-4">Informacion de Acceso</div>
+                    <div class="pb-1">Fecha Registro: {{ user.date_joined }}</div>
+                    <div class="pb-1">Ultimo Ingreso: {{ user.last_login }}</div>
+                </div>
+                <div class="py-5 text-center">
+                    <a class = "btn btn-dark text-white fw-bold" href="{% url 'edit_user'%}">Editar Mis Datos</a>
+                    {% if user.profile.tipo.nombre == 'arrendador' %}
+                        <a class = "btn btn-dark fw-bold" href="{% url 'properties'%}"> Mis Propiedades</a>     
+                    {% endif %}
+                </div>    
+            </div>
+
+        </div>
+    </div>
+
+{% endblock %} 
+<div class="display-6 border-bottom pt-4">Dirección</div>

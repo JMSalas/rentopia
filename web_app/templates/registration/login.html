@@ -1,0 +1,46 @@
+{% extends 'web_app/base/base.html'%}
+
+{% block title %}
+    Rentopia Login
+{% endblock %}
+
+{% block content %}
+    <div class="container py-5 my-5 text-center">
+        <div class="col-sm-10 col-md-8 col-lg-7 col-xl-6 shadow mx-auto pb-5">
+
+            <h1 class="bg-info py-3">Log In</h1>
+            <!-- Mensajes Creacion Exitosa User-Profile -->
+                {% if messages %}
+                    <div class="alert alert-success">
+                        <ul class="messages">
+                            {% for message in messages %}
+                                <li{% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
+                            {% endfor %}
+                        </ul>
+                    </div>   
+                {% endif %}
+
+            <form method="post">
+                {% csrf_token %}
+                <div class="text-danger fw-bold">
+                    {{ form.non_field_errors }}
+                </div>
+                <div class="pt-3">
+                    <p>{{ form.username.errors }}</p>
+                    <p class="fw-bold">{{ form.username.label_tag }}</p>
+                    {{ form.username }}
+                </div>
+                <div class="pt-3 pb-5">
+                    <p>{{ form.password.errors }}</p>
+                    <p class="fw-bold">{{ form.password.label_tag }}</p>
+                    {{ form.password }}<br>
+                    <a href="{% url 'wip'%}">Recuperar Password</a>
+                </div>
+                <input type="submit" class="btn btn-info fw-bold" value="Log In" style="width: 30%;">
+            </form>
+            <div class="pt-5 ">
+                <a class = "btn btn-secondary fw-bold" href="{% url 'create_user' %}">Registrarse en Rentopia</a>    
+            </div>
+        </div>
+    </div>
+{% endblock %}

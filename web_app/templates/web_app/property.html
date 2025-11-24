@@ -1,0 +1,53 @@
+{% extends 'web_app/base/base.html' %}
+
+{% block content %}
+    <div class="container py-5">
+        <div class="row">
+            <div class="col-8 mx-auto shadow text-center border-top">
+                <div class="h1 border-bottom py-4 text-center">{% if editar  %}Editar Propiedad{% else %}Crear Propiedad{% endif %}</div>
+                <!-- Forms Errors -->
+                {% if all_errors %}
+                    <div class="alert alert-danger">
+                        <ul>
+                        {% for field, errors in all_errors.items %}
+                            {% for error in errors %}
+                                <li>{{ field }}: {{ error }}</li>
+                            {% endfor %}
+                        {% endfor %}
+                        </ul>
+                    </div>
+                {% endif %}
+        
+                <!-- Forms -->
+                <form method="post">
+                    {% csrf_token %}
+                    <div class="h3 border-bottom py-3 text-center">Datos Propiedad</div>
+                    {{ propiedad_form.nombre.label_tag }}<br>{{ propiedad_form.nombre }}<br>
+                    {{ propiedad_form.descripcion.label_tag }}<br>{{ propiedad_form.descripcion }}<br>
+                    {{ propiedad_form.m2_construidos.label_tag }}<br>{{ propiedad_form.m2_construidos }}<br>
+                    {{ propiedad_form.m2_totales.label_tag }}<br>{{ propiedad_form.m2_totales }}<br>
+                    {{ propiedad_form.estacionamientos.label_tag }}<br>{{ propiedad_form.estacionamientos }}<br>
+                    {{ propiedad_form.habitaciones.label_tag }}<br>{{ propiedad_form.habitaciones }}<br>
+                    {{ propiedad_form.banos.label_tag }}<br>{{ propiedad_form.banos }}<br>
+                    {{ propiedad_form.precio_arriendo.label_tag }}<br>{{ propiedad_form.precio_arriendo }}<br>
+                    {{ propiedad_form.meses_garantia.label_tag }}<br>{{ propiedad_form.meses_garantia }}<br>
+                    {{ propiedad_form.google_map.label_tag }}<br>{{ propiedad_form.google_map }}<br><br>
+                    {{ propiedad_form.tipo_propiedad.label_tag }}{{ propiedad_form.tipo_propiedad }}
+                    {{ propiedad_form.disponible.label_tag }}{{ propiedad_form.disponible }}<br>
+                    <div class="h3 border-bottom py-3 text-center">Dirección</div>
+                    {{ dir_form.calle.label_tag }}<br>{{ dir_form.calle }}<br>
+                    {{ dir_form.numero.label_tag }}<br>{{ dir_form.numero }}<br>
+                    {{ dir_form.dpto.label_tag }}<br>{{ dir_form.dpto }}<br>
+                    {{ dir_form.comuna.label_tag }}<br>{{ dir_form.comuna }}<br>
+                    
+                    <div class="py-3 text-center">
+                        {% if user.is_authenticated %}
+                            <a href="{% url 'properties' %}" class="btn btn-secondary">Volver</a>
+                        {% endif %}
+                        <button type="submit" class="btn btn-secondary">{% if editar  %}Guardar Propiedad{% else %}Crear Propiedad{% endif %}</button>  
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+{% endblock %}

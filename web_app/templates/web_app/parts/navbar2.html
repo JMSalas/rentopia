@@ -1,0 +1,33 @@
+<nav class="navbar navbar-expand-lg container-fluid" style="background-color: rgb(243, 196, 86);">
+  <div class="container px-0">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav fs-5">
+        <li class="nav-item ps-0 pe-4">
+          <a class="nav-link text-dark active" aria-current="page" href="{% url 'index' %}"><i class="fa-solid fa-house me-3"></i>Inicio</a>
+        </li>
+      </ul>
+    </div>
+    <div>
+      <ul class="navbar-nav fs-5 fw-bold">
+        {% if user.is_authenticated %}
+          <li>
+            <a class = "btn btn-secondary fw-bold" href="{% url 'profile'%}">Profile</a>
+          </li>
+          <li>
+            <form action="{% url 'logout' %}" method="post">
+              {% csrf_token %}
+                <button class="btn btn-secondary fw-bold" type="submit">Log Out</button>
+            </form>
+          </li>
+        {% else %}
+          <li class="nav-item">
+            <a class = "btn btn-secondary fw-bold" href="{% url 'login'%}">Log in</a>   
+          </li>
+        {% endif %}
+      </ul>
+    </div>
+  </div>
+</nav>

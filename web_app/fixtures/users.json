@@ -1,0 +1,112 @@
+[
+    {
+        "model": "auth.User",
+        "pk": 3,
+        "fields": {
+            "username": "usuario1",
+            "password": "pbkdf2_sha256$720000$6azzdhyDk29AzPW3O9LdrT$1p1VfXaT3Nutk1FOyJq6ISkQBnctQwK8wyDau3Z6kok=",
+            "email": "usuario1@example.com",
+            "first_name": "Juan",
+            "last_name": "Pérez"
+        }
+    },
+    {
+        "model": "auth.User",
+        "pk": 4,
+        "fields": {
+            "username": "usuario2",
+            "password": "pbkdf2_sha256$720000$6azzdhyDk29AzPW3O9LdrT$1p1VfXaT3Nutk1FOyJq6ISkQBnctQwK8wyDau3Z6kok=",
+            "email": "usuario2@example.com",
+            "first_name": "María",
+            "last_name": "González"
+        }
+    },
+    {
+        "model": "auth.User",
+        "pk": 5,
+        "fields": {
+            "username": "usuario3",
+            "password": "pbkdf2_sha256$720000$6azzdhyDk29AzPW3O9LdrT$1p1VfXaT3Nutk1FOyJq6ISkQBnctQwK8wyDau3Z6kok=",
+            "email": "usuario3@example.com",
+            "first_name": "Pedro",
+            "last_name": "Ramírez"
+        }
+    },
+    {
+        "model": "auth.User",
+        "pk": 6,
+        "fields": {
+            "username": "usuario4",
+            "password": "pbkdf2_sha256$720000$6azzdhyDk29AzPW3O9LdrT$1p1VfXaT3Nutk1FOyJq6ISkQBnctQwK8wyDau3Z6kok=",
+            "email": "usuario4@example.com",
+            "first_name": "Ana",
+            "last_name": "López"
+        }
+    },
+    {
+        "model": "auth.User",
+        "pk": 7,
+        "fields": {
+            "username": "usuario5",
+            "password": "pbkdf2_sha256$720000$6azzdhyDk29AzPW3O9LdrT$1p1VfXaT3Nutk1FOyJq6ISkQBnctQwK8wyDau3Z6kok=",
+            "email": "usuario5@example.com",
+            "first_name": "Carlos",
+            "last_name": "Martínez"
+        }
+    },
+    {
+        "model": "auth.User",
+        "pk": 8,
+        "fields": {
+            "username": "usuario6",
+            "password": "pbkdf2_sha256$720000$6azzdhyDk29AzPW3O9LdrT$1p1VfXaT3Nutk1FOyJq6ISkQBnctQwK8wyDau3Z6kok=",
+            "email": "usuario6@example.com",
+            "first_name": "Fabiola",
+            "last_name": "Cabello"
+        }
+    },
+    {
+        "model": "auth.User",
+        "pk": 9,
+        "fields": {
+            "username": "usuario7",
+            "password": "pbkdf2_sha256$720000$6azzdhyDk29AzPW3O9LdrT$1p1VfXaT3Nutk1FOyJq6ISkQBnctQwK8wyDau3Z6kok=",
+            "email": "usuario7@example.com",
+            "first_name": "Laura",
+            "last_name": "Fernández"
+        }
+    },
+    {
+        "model": "auth.User",
+        "pk": 10,
+        "fields": {
+            "username": "usuario8",
+            "password": "pbkdf2_sha256$720000$6azzdhyDk29AzPW3O9LdrT$1p1VfXaT3Nutk1FOyJq6ISkQBnctQwK8wyDau3Z6kok=",
+            "email": "usuario8@example.com",
+            "first_name": "Diego",
+            "last_name": "Hernández"
+        }
+    },
+    {
+        "model": "auth.User",
+        "pk": 11,
+        "fields": {
+            "username": "usuario9",
+            "password": "pbkdf2_sha256$720000$6azzdhyDk29AzPW3O9LdrT$1p1VfXaT3Nutk1FOyJq6ISkQBnctQwK8wyDau3Z6kok=",
+            "email": "usuario9@example.com",
+            "first_name": "Isabel",
+            "last_name": "López"
+        }
+    },
+    {
+        "model": "auth.User",
+        "pk": 12,
+        "fields": {
+            "username": "usuario10",
+            "password": "pbkdf2_sha256$720000$6azzdhyDk29AzPW3O9LdrT$1p1VfXaT3Nutk1FOyJq6ISkQBnctQwK8wyDau3Z6kok=",
+            "email": "usuario10@example.com",
+            "first_name": "María",
+            "last_name": "González"
+        }
+    }
+]

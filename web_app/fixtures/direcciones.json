@@ -1,0 +1,192 @@
+[
+    {
+        "model": "web_app.direccion",
+        "pk": 1,
+        "fields": {
+            "calle": "Libertad",
+            "numero": 123,
+            "dpto": "4A",
+            "comuna": 49
+        }
+    },
+    {
+        "model": "web_app.direccion",
+        "pk": 2,
+        "fields": {
+            "calle": "La Providencia",
+            "numero": 456,
+            "dpto": null,
+            "comuna": 81
+        }
+    },
+    {
+        "model": "web_app.direccion",
+        "pk": 3,
+        "fields": {
+            "calle": "Pajaritos",
+            "numero": 789,
+            "dpto": "10B",
+            "comuna": 99
+        }
+    },
+    {
+        "model": "web_app.direccion",
+        "pk": 4,
+        "fields": {
+            "calle": "Merced",
+            "numero": 246,
+            "dpto": null,
+            "comuna": 49
+        }
+    },
+    {
+        "model": "web_app.direccion",
+        "pk": 5,
+        "fields": {
+            "calle": "Serrano",
+            "numero": 987,
+            "dpto": null,
+            "comuna": 81
+        }
+    },
+    {
+        "model": "web_app.direccion",
+        "pk": 6,
+        "fields": {
+            "calle": "Avenida Central",
+            "numero": 321,
+            "dpto": "7D",
+            "comuna": 99
+        }
+    },
+    {
+        "model": "web_app.direccion",
+        "pk": 7,
+        "fields": {
+            "calle": "Calle del Mar",
+            "numero": 654,
+            "dpto": "3E",
+            "comuna": 49
+        }
+    },
+    {
+        "model": "web_app.direccion",
+        "pk": 8,
+        "fields": {
+            "calle": "Bella Vista",
+            "numero": 222,
+            "dpto": null,
+            "comuna": 81
+        }
+    },
+    {
+        "model": "web_app.direccion",
+        "pk": 9,
+        "fields": {
+            "calle": "Calle del Sol",
+            "numero": 111,
+            "dpto": "1F",
+            "comuna": 99
+        }
+    },
+    {
+        "model": "web_app.direccion",
+        "pk": 10,
+        "fields": {
+            "calle": "Calle Nueva",
+            "numero": 777,
+            "dpto": "5G",
+            "comuna": 49
+        }
+    },
+    {
+        "model": "web_app.direccion",
+        "pk": 11,
+        "fields": {
+            "calle": "Agua Santa",
+            "numero": 123,
+            "dpto": "4A",
+            "comuna": 49
+        }
+    },
+    {
+        "model": "web_app.direccion",
+        "pk": 12,
+        "fields": {
+            "calle": "Diagonal Paraguay",
+            "numero": 456,
+            "dpto": null,
+            "comuna": 81
+        }
+    },
+    {
+        "model": "web_app.direccion",
+        "pk": 13,
+        "fields": {
+            "calle": "Los Pinos",
+            "numero": 789,
+            "dpto": "10B",
+            "comuna": 99
+        }
+    },
+    {
+        "model": "web_app.direccion",
+        "pk": 14,
+        "fields": {
+            "calle": "Las Rosas",
+            "numero": 555,
+            "dpto": null,
+            "comuna": 49
+        }
+    },
+    {
+        "model": "web_app.direccion",
+        "pk": 15,
+        "fields": {
+            "calle": "Brasil",
+            "numero": 987,
+            "dpto": "2D",
+            "comuna": 81
+        }
+    },
+    {
+        "model": "web_app.direccion",
+        "pk": 16,
+        "fields": {
+            "calle": "Luna",
+            "numero": 321,
+            "dpto": "5E",
+            "comuna": 99
+        }
+    },
+    {
+        "model": "web_app.direccion",
+        "pk": 17,
+        "fields": {
+            "calle": "5 Norte",
+            "numero": 654,
+            "dpto": null,
+            "comuna": 49
+        }
+    },
+    {
+        "model": "web_app.direccion",
+        "pk": 18,
+        "fields": {
+            "calle": "Portugal",
+            "numero": 777,
+            "dpto": "3F",
+            "comuna": 81
+        }
+    },
+    {
+        "model": "web_app.direccion",
+        "pk": 19,
+        "fields": {
+            "calle": "Los Alerces",
+            "numero": 222,
+            "dpto": "1G",
+            "comuna": 99
+        }
+    }
+]

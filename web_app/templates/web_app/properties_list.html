@@ -1,0 +1,37 @@
+{% extends 'web_app/base/base.html' %}
+
+{% block content %}
+    <div class="container py-5">
+        <div class="row">
+            <div class="col mx-auto shadow text-center border-top">
+                <div class="h1 border-bottom py-5 text-center">Tus Propiedades:</div>
+                <!-- Mensajes -->
+                {% if messages %}
+                    {% for message in messages %}
+                        <div class="alert alert-{% if message.tags %}{% if message.tags == 'error'%}danger{% else %}{{ message.tags }}{% endif %}{% else %}info{% endif %}">
+                            {{ message }}
+                        </div>
+                    {% endfor %}
+                {% endif %}
+
+                {% for propiedad in propiedades %}
+                    <div class="row border-bottom fs-6 py-2">
+                        <div class="col text-start">
+                            {{ propiedad }}
+                        </div>
+                        <div class="col text-end">
+                            <div>
+                                <a class='btn btn-warning' href="{% url 'images' pk=propiedad.pk %}"><i class="fa-solid fa-image"></i> Imagenes</a>
+                                <a class='btn btn-warning' href="{% url 'edit_property' pk=propiedad.pk %}"><i class="fa-solid fa-pen-to-square"></i> Editar</a>
+                                <a class='btn btn-danger' href="{% url 'delete_property' pk=propiedad.pk %}"><i class="fa-solid fa-trash-can"></i> Eliminar</a>
+                            </div> 
+                        </div>
+                    </div>
+                {% endfor %}
+                <div class="py-5">
+                    <a class = "btn btn-dark text-white fw-bold" href="{% url 'create_property'%}"><i class="fa-solid fa-house me-3"></i> Agregar Propiedad</a>      
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

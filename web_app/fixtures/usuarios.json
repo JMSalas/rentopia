@@ -1,0 +1,123 @@
+[
+    {
+        "model": "web_app.usuario",
+        "pk": 1,
+        "fields": {
+            "rut": "89090229",
+            "telefono": "997083404",
+            "tipo": 1,
+            "direccion": 4,
+            "user": 2
+        }
+    },
+    {
+        "model": "web_app.usuario",
+        "pk": 2,
+        "fields": {
+            "rut": "11111111",
+            "telefono": "111111111",
+            "tipo": 1,
+            "direccion": 2,
+            "user": 3
+        }
+    },
+    {
+        "model": "web_app.usuario",
+        "pk": 3,
+        "fields": {
+            "rut": "22222222",
+            "telefono": "222222222",
+            "tipo": 1,
+            "direccion": 3,
+            "user": 4
+        }
+    },
+    {
+        "model": "web_app.usuario",
+        "pk": 4,
+        "fields": {
+            "rut": "33333333",
+            "telefono": "333333333",
+            "tipo": 1,
+            "direccion": 1,
+            "user": 5
+        }
+    },
+    {
+        "model": "web_app.usuario",
+        "pk": 5,
+        "fields": {
+            "rut": "44444444",
+            "telefono": "444444444",
+            "tipo": 1,
+            "direccion": 5,
+            "user": 6
+        }
+    },
+    {
+        "model": "web_app.usuario",
+        "pk": 6,
+        "fields": {
+            "rut": "55555555",
+            "telefono": "555555555",
+            "tipo": 2,
+            "direccion": 6,
+            "user": 7
+        }
+    },
+    {
+        "model": "web_app.usuario",
+        "pk": 7,
+        "fields": {
+            "rut": "66666666",
+            "telefono": "666666666",
+            "tipo": 2,
+            "direccion": 7,
+            "user": 8
+        }
+    },
+    {
+        "model": "web_app.usuario",
+        "pk": 8,
+        "fields": {
+            "rut": "77777777",
+            "telefono": "777777777",
+            "tipo": 2,
+            "direccion": 8,
+            "user": 9
+        }
+    },
+    {
+        "model": "web_app.usuario",
+        "pk": 9,
+        "fields": {
+            "rut": "88888888",
+            "telefono": "888888888",
+            "tipo": 2,
+            "direccion": 9,
+            "user": 10
+        }
+    },
+    {
+        "model": "web_app.usuario",
+        "pk": 10,
+        "fields": {
+            "rut": "99999999",
+            "telefono": "999999999",
+            "tipo": 2,
+            "direccion": 10,
+            "user": 11
+        }
+    },
+    {
+        "model": "web_app.usuario",
+        "pk": 11,
+        "fields": {
+            "rut": "101111111",
+            "telefono": "811111111",
+            "tipo": 2,
+            "direccion": 11,
+            "user": 12
+        }
+    }
+]

@@ -1,0 +1,66 @@
+{% extends 'web_app/base/base.html' %}
+{% load static %}
+
+{% block content %}
+    <div class="container py-5">
+        <div class="row mb-5">
+            <div class="col-12 mx-auto shadow text-center border-top">
+                <h1>Propiedades en Arriendo:</h1>
+            </div>
+        </div>
+                
+        <form method="get" class="row py-4 shadow border-top">
+            <div class="col-12 text-center">
+                <label for="region">Region:</label>
+                <select name="region" id="region">
+                    <option value="">Todas</option>
+                    {% for region in regiones %}
+                        <option value="{{ region.id }}" {% if region.id|stringformat:"s" == selected_region %}selected{% endif %}>
+                            {{ region.nombre }}
+                        </option>
+                    {% endfor %}
+                </select>
+
+                <label for="comuna">Comuna:</label>
+                <select name="comuna" id="comuna">
+                    <option value="">Todas</option>
+                    {% for comuna in comunas %}
+                        <option value="{{ comuna.id }}" {% if comuna.id|stringformat:"s" == selected_comuna %}selected{% endif %}>
+                            {{ comuna.nombre }}
+                        </option>
+                    {% endfor %}
+                </select>    
+            </div>
+
+            <div class="col-12 text-center pt-3">
+                <button type="submit" class='btn btn-secondary'>Filtrar</button>    
+            </div>
+        </form>
+
+        <div class="row py-5">
+            {%for propiedad in propiedades %}
+            <div class="col-xxl-4 col-xl-4 col-lg-6 col-sm-12 px-5 pb-5">
+                <div class="card px-0 border-0 shadow-lg">
+                    
+                    {% with thumb_image=propiedad.get_thumb_image %}
+                        {% if thumb_image %}
+                            <img src="{{ thumb_image.foto.url }}" class="card-img-top" alt="{{ propiedad.nombre }}">
+                        {% else %}
+                            <img src="{% static 'img/placeholder.jpeg' %}" class="card-img-top" alt="{{ propiedad.nombre }}">
+                        {% endif %}
+                    {% endwith %}
+
+                    <div class="card-body border-bottom border-5 border-info">
+                        <h5 class="card-title border-bottom border-info fw-bold">{{ propiedad.nombre }}</h5>
+                        <p class="card-text fw-bold">{{ propiedad.direccion }}</p>
+                        <p class="card-text fw-bold">$ {{ propiedad.precio_arriendo }}</p>
+                        <div>
+                            <a class="btn btn-warning fw-bold" href="{% url 'property_detail' pk=propiedad.pk %}">Detalle</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>  
+    </div>
+{% endblock %}
