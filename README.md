@@ -1,10 +1,4 @@
-¡Excelente decisión\! Cambiar el badge para reflejar la naturaleza configurable de la base de datos es una mejora significativa para un proyecto de Django.
-
-Aquí tienes el nuevo `README.md` completo para **Rentopia**. He actualizado los *badges* para usar **PostgreSQL** (ya que es la opción más común y robusta en proyectos reales de Django) y he añadido una nota en la sección de tecnologías para aclarar la flexibilidad de la base de datos.
-
------
-
-# RENTOPIA 🏠
+# RENTOPIA
 
 ## Plataforma Web de Gestión y Listado de Alquileres
 
@@ -17,7 +11,7 @@ Aquí tienes el nuevo `README.md` completo para **Rentopia**. He actualizado los
 
 -----
 
-## ✨ Características Principales (Key Features)
+## Características Principales (Key Features)
 
 El proyecto está diseñado para funcionar como un sistema robusto de catalogación y contacto para artículos de alquiler:
 
