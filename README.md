@@ -2,7 +2,6 @@
 
 ## Plataforma Web de Gestión y Listado de Alquileres
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Framework](https://img.shields.io/badge/Framework-Django-092E20?style=flat-square&logo=django&logoColor=white)](https://www.djangoproject.com/)
 [![Lenguaje](https://img.shields.io/badge/Lenguaje-Python-3776AB?style=flat-square&logo=python&logoColor=white)](https://www.python.org/)
 [![Database](https://img.shields.io/badge/Database-PostgreSQL-336791?style=flat-square&logo=postgresql&logoColor=white)](https://www.postgresql.org/)
